@@ -1,0 +1,14 @@
+<ContentView ...
+          x:Name="this"
+          x:Class="CardViewDemo.Controls.CardView">
+     <Frame BindingContext="{x:Reference this}" BackgroundColor="{Binding CardColor}" BorderColor="{Binding BorderColor}" ...>
+       <Grid> ...
+            <Frame BorderColor="{Binding BorderColor}"
+                   BackgroundColor="{Binding IconBackgroundColor}" ...>
+                   <Image Source="{Binding IconImageSource}" .. />
+            </Frame> <Label Text="{Binding CardTitle}" ... />
+            <BoxView BackgroundColor="{Binding BorderColor}" ... />
+            <Label Text="{Binding CardDescription}" ... />
+        </Grid>
+     </Frame>
+</ContentView>
